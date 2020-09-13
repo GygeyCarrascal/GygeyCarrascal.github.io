@@ -5,44 +5,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet"  href="./style/mihojadeestilos.css"  >
         <title>Contact</title>
     </head>
     <body>
 
-        <nav class="menu">
-              <a href="/index.html">HOME</a>
-              <a href="/about.html">SOBRE MI</a>
-              <a href="/contact.html">CONTACTO</a>
-        </nav>
+        <head >
+            <nav >
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li> <a href="/about.html">SOBRE MI</a></li>
+                     <li><a href="/contact.html">CONTACTO</a></li>
+                </ul>
+             </nav> 
+         </head>
+    
+        <div >
+            <div class="row">
+              <div class="col-7" id="formulario">                
+                 <div class="container" >
+                        <form>
+                            
+                            <h3>Hablemos. . .</h3></br>
+                            <p>Nombre y Apellidos:</p>
+                            <input type="text" class="field" ></br>
 
-        <h3>Contactátate con migo</h3>
-        <br>
-        <div>
-            <div class="container">
-                <form>
-                <div>
-                    <label for="nombre">Nombre y Apellidos:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Escribe aqui tu nombre..">
-                
+                            <p>Correo:</p>
+                            <input type="text" class="field" ></br>
+
+
+                            <p>Área:</p>
+                            <input type="text" class="field" ></br>
+
+                            <p>Asunto:</p>
+                            <textarea id="mensaje" class="field" style="height:100px"></textarea></br>
+                            
+                            <p class="center-content">
+                                <input type="submit" value="ENVIAR" class="btn btn-green">                                
+                            </p>
+                        </form>
+                </div>      
                 </div>
-                <div>
-                    <label for="tema">Tema a tratar :</label>
-                  <textarea id="mensaje" name="mensaje" placeholder="Deja un mensaje.." style="height:200px"></textarea>
-              
-                </div>
-                  <input type="submit" value="Enviar">
-                </form>
+              <div class="col-5" id="fondoform">
+                <img height="100%" src="./img/82531761_166899321269723_3876182483800853014_n.jpg" class="img-fluid" alt="Responsive image">
               </div>
-              <br>
-            <a href="https://www.linkedin.com/in/gigey-carrascal-5a5051186/"><i class="fa fa-linkedin-square"></i></a> 
-            <i  class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <div>
-                <div><i class="fa fa-phone">9309143338</i></div>
-                <div><i  class="fa fa-google">Gcarrascals15_2@unc.edu.pe</i></div>
             </div>
-           
-
+            </div>
         </div>
+
+        
     </body>
 </html>
