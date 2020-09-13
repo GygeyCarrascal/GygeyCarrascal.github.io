@@ -14,6 +14,16 @@
     src: url(../fuente/Kiona-Regular.ttf);
 }
 
+@font-face{
+    font-family: Thankyou ;
+    src: url(../fuente/AboutLove.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+
 /*Aplicando fuentes*/
 
 h1.nombre{
@@ -35,12 +45,6 @@ nav{
     
 }
 
-/*nav.a{
-    color: white;
-    padding-left: 1%;
-    padding-right: 1%;
-}*/
-
 nav a{
     text-decoration:none;
     color:inherit;
@@ -61,6 +65,16 @@ nav a{
     background-color:#fff;
     color:#1a1a2e;
     }
+#main-header {
+    position: fixed;
+    z-index:1;
+    top: 0;
+    width: 100%;
+    height: 100px;
+
+}
+
+
 
 #fondo{
     background-image: url(../img/fondo.jpg);
@@ -76,7 +90,7 @@ nav a{
     padding-bottom: 2%;
     padding-right: 3%;
     padding-left: 3%;
-    border-radius: 10%;
+    border-radius: 5px;
     
 }
 
@@ -93,19 +107,16 @@ nav a{
 }
 
 a.icons1{
-    font-size: 150%;
     color: white;
     padding-right: 5%;
 }
 
-a.icons1:hover{
-    font-size: 200%;
-}
+
 
 #partesupfondo2{
-    padding-top: 1%;
-    padding-bottom: 1%;
     align-content: center;
+    text-align: center;
+    color: white;
 }
 
 a.boton1{
@@ -122,14 +133,16 @@ a.boton1{
 
 p.cita{
     font-family: CaviarDreams;
-    font-size: 110%;
+    font-size: 130%;
 }
 body{
     background-color: #f8f8f8;
+
 }
 
 footer{
-    background-color: #1a1a2e;text-align: center;
+    background-color: #1a1a2e;
+    text-align: center;
 }
 
 iframe{
