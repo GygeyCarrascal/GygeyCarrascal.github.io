@@ -14,10 +14,6 @@
     src: url(../fuente/Kiona-Regular.ttf);
 }
 
-@font-face{
-    font-family: Thankyou ;
-    src: url(../fuente/AboutLove.ttf);
-}
 
 * {
     padding: 0;
@@ -132,17 +128,24 @@ a.boton1{
 }
 
 p.cita{
-    font-family: CaviarDreams;
+    font-family: Pacifico;
     font-size: 130%;
 }
 body{
     background-color: #f8f8f8;
+    font-family: 'Nunito', serif;
 
 }
 
 footer{
     background-color: #1a1a2e;
     text-align: center;
+    position: static;
+   left:0px;
+   bottom:0px;
+   width:100%;
+   height: 100%;
+    color: white;
 }
 
 iframe{
@@ -267,12 +270,55 @@ div.body{
   article{
       padding-top: 2%;
   }
- 
+  
+  .contenedor{
+      width: 100%;
+      margin: auto;
+  }
+
+  img.img-full{
+    width: 100%;  
+  }
+
+  .persona__columna{
+      margin: 5px;
+  }
+
+  .personas.contenedor{
+      display: grid;
+  }
+  @media(min-width:520px){
+    .personas.contenedor{
+        grid-template-columns: repeat(2,50%);
+    }
+  }
+
+  @media(min-width:728px){
+    .personas.contenedor{
+        grid-template-columns: repeat(3,33.3%);
+    }
+  }
+
+  @media(min-width:1024px){
+    .personas.contenedor{
+        grid-template-columns: repeat(4,25%);
+    }
+  }
+
+  @media(min-width:1200px){
+    .contenedor{
+        width: 1200px;
+    }
+  }
+
+  em{
+      font-family: Pacifico;
+  }
+
 /*form*/
 form{
     background-color: white;
     border-radius: 3px;
-    color: #999;
     font-size: 0.8em;
     padding: 5%;
     margin: 0 auto;
