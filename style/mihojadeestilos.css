@@ -235,6 +235,9 @@ div.body{
 
   span{
       color: blueviolet;
+      background-color: lightgrey;
+      padding:5%;
+      border-radius: 100%;
   }
 
   div.col-4{
