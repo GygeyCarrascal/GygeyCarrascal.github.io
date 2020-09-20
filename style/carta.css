@@ -1,0 +1,101 @@
+    
+@font-face{
+    font-family: Kiona ;
+    src: url(../fuente/Kiona-Regular.ttf);
+}
+
+@font-face{
+    font-family: Roboto ;
+    src: url(../fuente/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: blue_eyes ;
+    src: url(../fuente/Blue_eyes.otf);
+}
+
+@font-face{
+    font-family: writeasong ;
+    src: url(../fuente/write_me_a_song.ttf);
+}
+
+
+*{
+	margin: 0;
+    padding: 0;
+   
+}
+
+
+body{
+    background-color: lightgrey;
+    font-family: 'Nunito', serif;
+}
+
+.Lista_noordenada {
+      padding: 0;
+      margin: 0;
+      list-style:  circle;
+  }
+.Lista_ordenada{
+    padding: 0;
+    margin: 0;
+    list-style-type: lower-alpha;
+}
+
+
+ div.topfloreado{
+    background: url(../img/florsup.jpg);
+    width: auto;
+    height: 180px;
+}
+.carta{
+    background-color: white;
+    margin-top: 50px;
+    margin-right: 17%;
+    margin-left: 17%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    font-family: writeasong;
+    font-size: 20px;
+}
+
+.escritura{
+    margin: 5%;
+    padding-bottom: 5%;
+}
+
+.membrete{
+    text-align: right;
+}
+
+.cuerpo{
+    padding-bottom: 20%;
+}
+
+.asunto{
+    border-top-color: grey;
+    border-top-style: dashed;
+    border-top-width: 2px;
+    padding-top: 2%;
+    border-bottom-color: grey;
+    padding-bottom: 2%;
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+}
+
+.firma{
+    font-family:blue_eyes ;
+}
+
+.listas{
+    padding-left: 5%;
+}
+
+.linkfb{
+    text-decoration: none;
+    color: rebeccapurple;
+    font-size: 22px;
+    font-weight: bold;
+}
