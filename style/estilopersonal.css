@@ -376,3 +376,65 @@ input, textarea{
 #fondoform{
     background-image: url(../img/82531761_166899321269723_3876182483800853014_n.jpg);
 }
+
+
+/*****/
+@media (max-width: 992px) {
+    .navbar-nav {
+      height: auto;
+      max-height: 400px;
+      overflow-x: hidden;
+    }
+  }
+
+  .navbar-nav a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .navbar-nav a:hover {
+    color: #000;
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-nav {
+      margin-top: 10px;
+    }
+    .navbar-nav a {
+      padding: 0;
+    }
+    .navbar-nav li {
+      padding: 15px 0;
+    }
+  }
+
+  .navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-nav a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .navbar-nav a:hover {
+    color: #000;
+  }
+  
+  .p1-gradient-bg, .primary-btn, .primary-btn2:hover, .default-header, .dropdown-menu, .banner-area, .myself-wrap .desc .talk-btn, .skillbar-bar, .single-feature:hover, .single-footer-widget .click-btn, .generic-banner {
+    background-image: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+    background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+    background-image: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+  }
+
+    
+  @media (max-width: 767px) {
+    .banner-area .fullscreen {
+      height: 700px !important;
+    }
+  }

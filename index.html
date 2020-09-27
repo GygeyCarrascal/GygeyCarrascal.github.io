@@ -1,218 +1,362 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="zxx" class="no-js">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/Logo.png">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito">    
+    <title>Ginori Home</title>
+
+    <!--Fuente inicio-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico">
-    <link rel="stylesheet"  href="./style/estilopersonal.css"  >
-    <link rel="icon" type="image/png" href="./img/Logo.png" />
-</head>
-<body>
-    <div id="main-header">
-        <header>
-            <nav class="navegacion">
-                <ul class="menuul">
-                    <li><a href="/index.html#home">HOME</a></li>
-                    <li> <a href="/index.html#sobreMi">SOBRE MI</a></li>
-                    <li><a href="#">CARTAS</a>
-                        <ul class="submenu">
-                            <li><a href="/carta05.html">Carta 05</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/index.html#contacto">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+    <!--Fuente fin-->
+    <!--Iconos inicio-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--Iconos fin-->
+    <!--Framework inicio-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Framework fin-->
     
-        <div id="home">
-        <br> 
-        <br>   
-            <div class="row">
-                <div  class="col-5" id=fondo>
-                    <article id="partesupfondo">
-                    <h5 class="nombre">Hola,Soy</h5>
-                    <h1 class="nombre">Ginori</h1> 
-                    <h5 class="nombre">Estudiante de Ingeniería de Sistemas </h5>
-                    <h5 class="nombre">Cajamarca</h5>
-                    <h5 class="nombre">22 años</h5>
-                    </article>
-                    
+
+    <link rel="stylesheet" href="style/a.css">
+    </head>
+    <body>
+        <section class="areadelbanner" id="home">	
+            <header>
+                <nav class="backarea">
+                    <input type="checkbox"  id="res-menu">
+                    <label for="res-menu">
+                         <span class="material-icons" id="sing-one"> view_headline </span>
+                         <span class="material-icons" id="sing-two">clear</span>
+                    </label>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#hobbies">Sobre Mi</a></li>
+                        <li><a href="#Contacto">Contacto</a></li>
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" href="#" id="navbardrop">
+                            Carta
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/carta05.html">Carta05</a>
+                          </div>
+                        </li>										
+                    </ul>                   
+                </nav>
+                <div class="banner-area">
+                    <div class="banner-text">
+                        <h2>Menú</h2>
+                    </div>
                 </div>
-                <div class="col-7" >            
-                <img src="./img/17972189_1385287831514437_6295941999919840213_o.jpg" class="img-fluid" alt="Responsive image">
+            </header>			
+        <div class="container">
+            <div class="row justify-content-start align-items-center">
+                <div class="col-lg-6 col-md-12 no-padding banner-right">
+                    <img class="img-fluid" src="img/header-img.png" alt="Responsive image" style="width: 150%;height: auto;">
+                </div>						
+                <div class="col-lg-6 col-md-12 banner-left">
+                    <h1 class="text-white">
+                        Hola yo soy<br>
+                        <span>Ginori Carrascal</span> <br>
+                        Futura Ing. de Sistemas						
+                    </h1>
+                    <p class="text-white  mt-20 mb-40">
+                        Sólo se vive una vez, pero si lo haces bien, una vez es más que suficiente (Mae West / Actriz)
+                    </p>
                 </div>
             </div>
-            <div class="container" id="centrar">
-                <p class="cita">Sólo se vive una vez, pero si lo haces bien, una vez es más que suficiente (Mae West / Actriz)</p>
-            </div>
-            </div>
+        </div>
+        </section>
         <br>
 
-        
-        <!--CREAR TODO JUNTO-->
        
-        <div id="sobreMi">
-            <h3 class="titulo">HOBBIES</h3>
+
+        <section id="hobbies" class="margin-10">
+            <div class="outer-container">
+                <div class="container-fluid">
+                    <h3 class="tittleh3">Hobbies</h3>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-3">
+                             <div class="row">
+                                <div class="col s12 m7">
+                                  <div class="card">
+                                    <div class="card-image">
+                                      <img src="./img/fotosara.png">
+                                      <span class="card-title card-title1"><b>Fotografìa</b></span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Durante mis tiempos libres, aprendi conceptos sobre fotografia
+                                            y videos.Pues mi papá y amigos trabajan en el rubro.</p>
+                                            <div class="tags-links">
+                                                <a href="#">#photography</a>
+                                                <a href="#">#colors</a>
+                                                <a href="#">#portrait</a>
+                                                <a href="#">#models</a>
+                                            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <div class="row">
+                               <div class="col s12 m7">
+                                 <div class="card">
+                                   <div class="card-image">
+                                     <img src="./img/IMG_7431.jpg">
+                                     <span class="card-title card-title1"><b>Maquillaje</b></span>
+                                   </div>
+                                   <div class="card-content">
+                                    <p>Desde pequeña me llamó mucho la atención el mundo del maquillaje y realice un emprendimiento del mismo</p>
+                                    <div class="tags-links">
+                                        <a href="#">#makeup</a>
+                                        <a href="#">#mua</a>
+                                        <a href="#">#artist</a>
+                                        <a href="#">#novias</a>
+                                   </div>
+                                   <div class="card-action">
+                                    <a class="read-more" href="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F1042928419089096%2Fvideos%2F2555382398073095%2F&show_text=0&width=560">Ver video</a>
+                                  </div>
+                                 </div>
+                               </div>
+                             </div>
+                       </div>
+                        </div>
+                       
+                       <div class="col-12 col-md-6 col-xl-3">
+                        <div class="row">
+                           <div class="col s12 m7">
+                             <div class="card">
+                               <div class="card-image">
+                                 <img src="./img/perrito.jpg">
+                                 <span class="card-title card-title1"><b>Pasar tiempo con mis mascotas</b></span>
+                               </div>
+                               <div class="card-content">
+                                <p>Siempre que puedo los consiento y los mimo mucho. Tengo 2 bendiciones y uno si le gusta tomarse fotos y al otro no por lo que es muy dificl conseguir una foto con el, a menos que este durmiendo</p>
+                  
+                                <div class="tags-links">
+                                    <a href="#">#doglover</a>
+                                    <a href="#">#animalista</a>
+                                </div>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="row">
+                           <div class="col s12 m7">
+                             <div class="card">
+                               <div class="card-image">
+                                 <img src="./img/tejer.jpg">
+                                 <span class="card-title card-title1" ><b>Tejer con palillos o crochet</b></span>
+                               </div>
+                               <div class="card-content">
+                                <p>En mis ratos libres me gusta tejer sombreros, vestidos, y chompas para mi familia en especial para mi abuelita</p>
+                                
+                                        <div class="tags-links">
+                                            <a href="#">#crochet</a>
+                                            <a href="#">#ganchillolover</a>
+                                            <a href="#">#palillos</a>
+                                            <a href="#">#lanas</a>
+                                        </div>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competencias" class="margin-10">
             <div >
-                <div class="row">
-                <div class="col-2">
-                    <img  class="img-fluid" alt="Responsive image" src="./img/fotosara.png">
-                </div>
-                <div class="col-2">
-                    <strong class="titulo">FOTOGRAFÍA</strong>
-                    <p>Durante mis tiempos libres, aprendi conceptos sobre fotografia y videos.Pues mi papá y amigos trabajan en el rubro.</p>
-
-                </div>
-                <div class="col-2">
-                    <img  class="img-fluid" alt="Responsive image" src="./img/IMG_7431.jpg">
-                </div>
-                <div class="col-2">
-                    <strong class="titulo">MAQUILLAJE</strong>
-                <p>Desde pequeña me llamó mucho la atención el mundo del maquillaje y realice un emprendimiento del mismo</p>
-                <a class="boton1" href="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F1042928419089096%2Fvideos%2F2555382398073095%2F&show_text=0&width=560"> Ver video</a> 
-
-                </div>
-                <div class="col-2">
-                    <img  class="img-fluid" alt="Responsive image" src="./img/perrito.jpg">
-                </div>
-                <div class="col-2">
-                    <strong class="titulo">COMPARTIR TIEMPO CON MIS MASCOTAS</strong>
-                    <p>Siempre que puedo los consiento y los mimo mucho. Tengo 2 bendiciones y uno si le gusta tomarse fotos y al otro no por lo que es muy dificl conseguir una foto con el, a menos que este durmiendo</p>
-                        </div>
-                
-                </div>
-            </div>
-             <br>
-            <div class="body">
-            <h3 class="titulo">COMIDA FAVORITA</h3>
-            <div class="container1">  
-                <ul class="slider">
-                <li id="slide1">
-                    <img  class="img-fluid" alt="Responsive image" src="./img/slider/makis-acevichado-2-1551628157.jpg">
-                </li>
-                <li id="slide2">
-                    <img  class="img-fluid" alt="Responsive image" src="./img/slider/tortachocolate.jpg">
-                </li>
-                <li id="slide3">
-                    <img  class="img-fluid" alt="Responsive image" src="./img/slider/empanadas-de-carne-receta.jpg">
-                </li>
-                <li id="slide4">
-                    <img  class="img-fluid" alt="Responsive image" src="./img/slider/pollo.jpg">
-                </li>
-                <li id="slide5">
-                    <img  class="img-fluid" alt="Responsive image" src="./img/slider/kebab.jpg">
-                </li>
-                <li id="slide6">
-                    <img  class="img-fluid" alt="Responsive image" src="./img/slider/tresleches.jpg">
-                </li>
-                <li id="slide7">
-                    <img  class="img-fluid" alt="Responsive image" src="./img/slider/ceviche.png">
-                </li>
-                <li id="slide8">
-                    <img  class="img-fluid" alt="Responsive image" src="./img/slider/tacos.jpg">
-                </li>
-                </ul>
+                <h3 class="tittleh3">Competencias</h3>
                 <br>
-                <ul class="menu">
-                <li>
-                    <a href="#slide1">1</a>
-                </li>
-                <li>
-                    <a href="#slide2">2</a>
-                </li>
-                <li>
-                    <a href="#slide3">3</a>
-                </li>
-                <li>
-                    <a href="#slide4">4</a>
-                </li>
-                <li>
-                    <a href="#slide5">5</a>
-                </li>
-                <li>
-                    <a href="#slide6">6</a>
-                </li>
-                <li>
-                    <a href="#slide7">7</a>
-                </li>
-                <li>
-                    <a href="#slide8">8</a>
-                </li>
-                </ul>
-            </div>
-            <br>
-            </div>
-            <section class="sectionabout">
-                <article>
-                    <h3 class="titulo">COMPETENCIAS</h3>
-                    <div>
-                        <div class="row">
-                        <div class="col-4">
-                            <span class="material-icons">supervised_user_circle </span>
-                            <p>Facilidad para trabajar en equipo.</p>
-                        </div>
-                        <div class="col-4">
-                            <span class="material-icons"> access_time </span>
-                            <p>Gestion del tiempo.</p>
-                        </div>
-                        <div class="col-4">
-                            <span class="material-icons"> replay </span>
-                            <p>Adaptación al cambio.</p>
-                        </div>              
-                        </div>
-                        <div class="row">
-                        <div class="col-4" >
-                            <span class="material-icons"> sentiment_very_satisfied </span>
-                            <p>Capacidad de motivación del personal.</p>
-                        </div>
-                        <div class="col-4">
-                            <span class="material-icons"> vertical_align_top </span>
-                            <p>Persistencia y constancia para obtener el resultado.</p>
-                        </div>
-                        <div class="col-4">
-                            <span class="material-icons"> color_lens </span>
-                            <p>Máxima Creatividad</p>
-                        </div>
+                <div class="row centrado">
+                    <div class=" col-md-4">
+                        <div class="row centrar" >
+                            <div class="col-md-2"><span class="material-icons morado">supervised_user_circle </span></div>
+                            <div class="col-md-8"><h5>Facilidad para trabajar en equipo.</h5>
+                                <p>Promueve estructuras de trabajo más flexibles y con menos jerarquía.</p>
+                            </div>
                         </div>
                     </div>
-                </article>
-                
-                <article>
-                    <h3 class="titulo">EXPERIENCIA LABORAL</h3>
-                    <div >
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="card" style="width: 18rem;padding-right: 2%;">
-                                    <div class="card-body">
-                                    <h5 class="card-title">SAT CAJAMARCA</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted"> Funciones</h6>
-                                    <p class="card-text">Responsable de manejo de Datos e Implementación de aplicaciones web para ,para uso del personal y contribuyentes de esta entidad.</p>
+                    <div class=" col-md-4 " >
+                        <div class="row centrar ">
+                            <div class="col-md-2"><span class="material-icons morado">access_time </span></div>
+                            <div class="col-md-8"><h5>Gestión del tiempo</h5>
+                            <p>Gestionar el tiempo nos permite realizar las tareas con más rapidez y que la jornada laboral sea más efectiva y se aproveche mejor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 ">
+                        <div class="row centrar">
+                            <div class="col-md-2"><span class="material-icons morado ">replay </span></div>
+                            <div class="col-md-8"><h5>Adaptación al cambio</h5>
+                            <p>Adaptarse al cambio tiene beneficios indudables en la vida de las personas, como crecimiento personal, flexibilidad, oportunidades y progreso</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 ">
+                        <div class="row centrar">
+                            <div class="col-md-2"><span class="material-icons morado ">sentiment_very_satisfied </span></div>
+                            <div class="col-md-8"><h5>Motivación del personal</h5>
+                            <p> Conocer los motivos que le generan satisfacción en el capital Humano es fundamental para mantener
+                                comprometidos con el buen funcionamiento de la empresa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 ">
+                        <div class="row centrar">
+                            <div class="col-md-2"><span class="material-icons morado ">vertical_align_top </span></div>
+                            <div class="col-md-8"><h5>Persistencia para obtener resultados.</h5>
+                            <p>La persistencia es un rasgo muy importante para desarrollar en la vida, porque está íntimamente relacionada con el propio desarrollo personal y la superación.</p></div>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 ">
+                        <div class="row centrar">
+                            <div class="col-md-2"><span class="material-icons morado ">color_lens </span></div>
+                            <div class="col-md-8"><h5>Máxima Creatividad</h5>
+                            <p>Esto es así porque le permite, justamente, crear e inventar nuevas cosas, objetos, elementos a partir de lo que ya existe en el mundo</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ExperienciaLab/interes" class="margin-10">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h3 class="tittleh3">Experiencia laboral</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div>
+                                <div class="card horizontal">
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <b>SAT CAJAMARCA</b>
+                                    <p>Responsable de manejo de Datos e Implementación de aplicaciones web para ,para uso del personal y contribuyentes de esta entidad.</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="card" style="width: 18rem;"> 
-                                    <div class="card-body">
-                                    <h5 class="card-title">IE. SHAULLO CHICO</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted"> Funciones</h6>
-                                    <p class="card-text">Implementacion de sistema web contable, para uso de los docentes</p>
                                 </div>
-                                </div>                   
-                            </div>              
-                        </div>          
-                        <br>   
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div >
+                            <div class="card horizontal">
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <b>IE. SHAULLO CHICO</b>
+                                <p>Implementacion de sistema web contable, para uso de los docentes</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div >
+                                <div class="card horizontal">
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <b>SSOMARC</b>
+                                    <p>Implementación de página web institucional informativa</p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </article>
-            </section>
-            <section class="personas">
+                    
+                      
+                     
+                </div>
+                <div class="col-sm-4">
+                <h3 class="tittleh3">Intereses</h3> 
+                <div class="tags-list1">
+                    <a href="#">Música</a>
+                    <a href="#">Viajes</a>
+                    <a href="#">Independencia</a>
+                    <a href="#">Verano</a>
+                    <a href="#">Manualidades</a>
+                    <a href="#">Pintura</a>
+                    <a href="#">Arte</a>
+                </div>
+                </div>
+              </div>
+        </section>
+
+        <section id="Comida">
             <br>
-                <h3 class="titulo">LUGARES QUE QUISIERA CONOCER</h3>
+            <h3 class="tittleh3">Comida Favorita</h3>
+            <br>
+            <div class="container1">
+                <ul class="slider">
+                    <li id="slide1">
+                        <img  class="img-fluid" alt="Responsive image" src="./img/slider/makis-acevichado-2-1551628157.jpg">
+                    </li>
+                    <li id="slide2">
+                        <img  class="img-fluid" alt="Responsive image" src="./img/slider/tortachocolate.jpg">
+                    </li>
+                    <li id="slide3">
+                        <img  class="img-fluid" alt="Responsive image" src="./img/slider/empanadas-de-carne-receta.jpg">
+                    </li>
+                    <li id="slide4">
+                        <img  class="img-fluid" alt="Responsive image" src="./img/slider/pollo.jpg">
+                    </li>
+                    <li id="slide5">
+                        <img  class="img-fluid" alt="Responsive image" src="./img/slider/kebab.jpg">
+                    </li>
+                    <li id="slide6">
+                        <img  class="img-fluid" alt="Responsive image" src="./img/slider/tresleches.jpg">
+                    </li>
+                    <li id="slide7">
+                        <img  class="img-fluid" alt="Responsive image" src="./img/slider/ceviche.png">
+                    </li>
+                    <li id="slide8">
+                        <img  class="img-fluid" alt="Responsive image" src="./img/slider/tacos.jpg">
+                    </li>
+                    </ul>
+                    <br>
+                    <ul class="menu">
+                    <li>
+                        <a href="#slide1">1</a>
+                    </li>
+                    <li>
+                        <a href="#slide2">2</a>
+                    </li>
+                    <li>
+                        <a href="#slide3">3</a>
+                    </li>
+                    <li>
+                        <a href="#slide4">4</a>
+                    </li>
+                    <li>
+                        <a href="#slide5">5</a>
+                    </li>
+                    <li>
+                        <a href="#slide6">6</a>
+                    </li>
+                    <li>
+                        <a href="#slide7">7</a>
+                    </li>
+                    <li>
+                        <a href="#slide8">8</a>
+                    </li>
+                    </ul>
+            </div>
+            br
+        </section>
+
+        <section class="personas">
+            <br>
+                <h3 class="tittleh3">Lugares que quisiera conocer</h3>
                 <br>
                 <div class=" personas contenedor">
                     <article class="persona__columna">
@@ -250,51 +394,114 @@
                     </article>
                 </div>
             <br>
-            </section>
-        </div>
+        </section>
 
-        <div id="contacto">
-            <div class="row">
-                <div class="col-7" id="formulario">                
-                   <div class="container" >
-                          <form>
-                              
-                              <h3>Hablemos. . .</h3><br>
-                              <p>Nombre y Apellidos:</p>
-                              <input type="text" class="field" ><br>
-  
-                              <p>Correo:</p>
-                              <input type="text" class="field" ><br>
-  
-  
-                              <p>Área:</p>
-                              <input type="text" class="field" ><br>
-  
-                              <p>Asunto:</p>
-                              <textarea id="mensaje" class="field" style="height:100px"></textarea><br>
-                              
-                              <p class="center-content">
-                                  <input type="submit" value="ENVIAR" class="boton1">                                
-                              </p>
-                          </form>
-                  </div>      
+        <section id="Contacto">
+            <br>
+            <div class="container formgrid pad-10" >
+                <h3 class="tittleh3">Hablemos. . . </h3>
+                <div class="row">
+                  <div class="col">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-field col s6" style="width: 100%;" >
+                                <p>Nombres:</p>
+                                <input placeholder="Ingresa tu nombre" id="first_name" type="text" class="validate">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-field col s6" style="width: 100%;" >
+                            <p>Apellidos:</p>
+                            <input placeholder="Ingresa tu apellido" id="firstlastname" type="text" class="validate">
+                        </div></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-field col s6" style="width: 100%;" >
+                                <p>Teléfono:</p>
+                                <input placeholder="Ingresa tu teléfono" id="tel" type="text" class="validate">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-field col s6" style="width: 100%;" >
+                            <p>Asunto:</p>
+                            <input placeholder="" id="asunt" type="text" class="validate">
+                        </div></div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="input-field col s6" style="width: 100%;" >
+                            <p>Area:</p>
+                            <textarea id="area" class="materialize-textarea"></textarea>
+                        </div>
+                      </div> 
+                      <div class="col-sm-12" >
+                        <div class="centrar" >
+                            <button class="btn waves-effect waves-light botonenv" name="action" style="padding-left: auto;padding-right: auto;">enviar
+                                <i class="material-icons right">send</i>
+                              </button>
+                        </div>
+                      </div>                     
                   </div>
-                <div class="col-5" id="fondoform">
-                  <img src="./img/82531761_166899321269723_3876182483800853014_n.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                
+              </div>
+              <br>
+        </section>
+
+        <section id="Grid">
+            <div class="no-padding nomargin">
+                <div class="row">
+                  <div class="col no-padding" >
+                    <img class="img-fluid" alt="responsive-img" src="./img/fotosmias/a.jpg">
+                  </div>
+                  <div class="col no-padding">
+                    <img class="img-fluid" alt="responsive-img" src="./img/fotosmias/b.jpg">
+                  </div>
+                  <div class="col no-padding">
+                    <img class="img-fluid" alt="responsive-img" src="./img/fotosmias/c.jpg">
+                  </div>
+                  <div class="col no-padding">
+                    <img class="img-fluid" alt="responsive-img" src="./img/fotosmias/d.jpg">
+                  </div>
+                  <div class="col no-padding">
+                    <img class="img-fluid" alt="responsive-img" src="./img/fotosmias/e.jpg">
+                  </div>
+                  <div class="col no-padding">
+                    <img class="img-fluid" alt="responsive-img" src="./img/fotosmias/f.jpg">
+                  </div>
+                  <div class="col no-padding">
+                    <img class="img-fluid" alt="responsive-img" src="./img/fotosmias/g.jpg">
+                  </div>
                 </div>
               </div>
-        </div>
-  <footer>
-        <div id="partesupfondo2">
-        <a class="icons1" href="https://www.linkedin.com/in/gigey-carrascal-5a5051186/"><i class="fa fa-linkedin-square"></i></a> 
-        <a class="icons1" href="https://www.facebook.com/Gigeey"><i class="fa fa-facebook"></i></a>
-        <a class="icons1" href="#"><i  class="fa fa-twitter"></i></a>
-        </div>
-        <p>© 2020 . All rights reserved | Designed by GinoriCarrascal</p>
-   
-  </footer>
+        </section>
 
-</body>
-
+        <footer class="sit-footer">
+            <div class="footer-bar">
+                <div class="outer-container">
+                    <div class="container-fluid">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-md-6">
+                                <div class="footer-copyright">
+                                    <p>© 2020 . All rights reserved | Realizado por <span class="glyphicon glyphicon-heart"></span>  GinoriCarrascal <span class="glyphicon glyphicon-heart"></span></p>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-md-6">
+                                <div class="footer-social">
+                                    <ul class="flex justify-content-center justify-content-md-end align-items-center">
+                                        <li><a  href="https://www.linkedin.com/in/gigey-carrascal-5a5051186/"><i class="fa fa-linkedin-square"></i></a></li>
+                                        <li><a  href="https://www.facebook.com/Gigeey"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a  href=""><i  class="fa fa-twitter"></i></a></li>                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+      
+    </body>
+  
 </html>
-
