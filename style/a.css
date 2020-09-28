@@ -97,8 +97,9 @@
 
   nav ul li{
     display: block;
-    margin: 40px 0;
     line-height: 30px;
+    margin:0 40 px;
+    display: inherit;
   }
 
   nav ul li a{
