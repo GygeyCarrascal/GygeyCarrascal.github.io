@@ -1,7 +1,7 @@
 
-let boton1=document.getElementById("btnextraer")
-let boton2=document.getElementById("btncolorear")
-let boton3=document.getElementById("btnlimpiar")
+let boton1=document.getElementById("btnextraer");
+let boton2=document.getElementById("btncolorear");
+let boton3=document.getElementById("btnlimpiar");
 
 /*Input inicio*/
 let labapeynomb=document.getElementById("apeynomb");
@@ -16,19 +16,19 @@ let labmesletras=document.getElementById("mesletras");
 
 document.getElementById("btnextraer").addEventListener('click', function(){
    boton1.onclick=Validar(labapeynomb, labfechnaci, labapellidopat,lablongap,labapellidomat,labedad,labnombre,labmesletras);
-  })
+  });
 
   document.getElementById("btncolorear").addEventListener('click', function(){
     boton2.onclick=colorear();
-   })
+   });
 
    document.getElementById("btnlimpiar").addEventListener('click', function(){
     boton3.onclick=limpiar(labapeynomb, labfechnaci, labapellidopat,lablongap,labapellidomat,labedad,labnombre,labmesletras);
-   })
+   });
 
 
 
-function Validar(var1,var2,var3,var4,var5,var6,var7,var8){
+function Validar(){
     let labapeynomb=document.getElementById("apeynomb");
     let labfechnaci=document.getElementById("fechnaci");  
 
@@ -38,10 +38,13 @@ function Validar(var1,var2,var3,var4,var5,var6,var7,var8){
         if(labfechnaci.value==""){
             alert('Complete todos los campos');
         }else{
+
             extraer(var1,var2,var3,var4,var5,var6,var7,var8);
+
         }
     }
 }
+
 
 function extraer(var1,var2,var3,var4,var5,var6,var7,var8){
     var3.value=SepararApellidoPat(var1.value);
@@ -54,6 +57,7 @@ function extraer(var1,var2,var3,var4,var5,var6,var7,var8){
 
 function SepararApellidoPat(var1){
  let espacio=" ";
+
 let apellidop=var1.substring(0,var1.indexOf(espacio));
 return apellidop;
 }
@@ -62,6 +66,8 @@ function SepararApellidoMat(var1){
     let espacio=" ";
    let nuevoap=var1.substring(var1.indexOf(espacio)+1,var1.length);
    let apellidom=nuevoap.substring(0,nuevoap.indexOf(espacio));   
+   let apellidom=nuevoap.substring(0,nuevoap.indexOf(espacio)); 
+
    return apellidom;
 }
 
@@ -69,6 +75,7 @@ function SepararNombre(var1){
     let espacio=" ";
    let nuevoap=var1.substring(var1.indexOf(espacio)+1,var1.length);
    let nombre=nuevoap.substring(nuevoap.indexOf(espacio)+1,nuevoap.length);   
+   let nombre=nuevoap.substring(nuevoap.indexOf(espacio)+1,nuevoap.length);
     return nombre;
 }
 
@@ -148,61 +155,13 @@ function MesLetr(var1){
     }
 
    return letra;
+
 }
 
 
 /*colorear inicio*/
 let flag=0;
 
-function colorear(){
-    console.log(flag);
-    let azul=document.getElementById("labapynom");
-    let azul1=document.getElementById("labapellidopat");
-    let azul2=document.getElementById("labapellidomat");
-    let azul3=document.getElementById("labnombre");
-    let azul4=document.getElementById("labfechnaci");
-    let rojo=document.getElementById("lablongap");  
-    let rojo1=document.getElementById("labedad");  
-    let rojo2=document.getElementById("labmesletras");  
-
-    if(flag==0){
-        colocarcolorAzul(rojo);
-        colocarcolorAzul(rojo1);
-        colocarcolorAzul(rojo2);
-        colocarcolorRojo(azul);
-        colocarcolorRojo(azul1);
-        colocarcolorRojo(azul2);
-        colocarcolorRojo(azul3);
-        colocarcolorRojo(azul4);
-        flag=1;
-    }else{
-        
-        colocarcolorRojo(rojo);
-        colocarcolorRojo(rojo1);
-        colocarcolorRojo(rojo2);
-        colocarcolorAzul(azul);
-        colocarcolorAzul(azul1);
-        colocarcolorAzul(azul2);
-        colocarcolorAzul(azul3);
-        colocarcolorAzul(azul4);
-
-        flag=0;
-    }
-    console.log(flag);
-
-    function colocarcolorAzul(var1){
-        var1.style.backgroundImage= "-moz-linear-gradient(0deg, #00263b 0%, #9ab3f5 100%)";
-        var1.style.backgroundImage= "-webkit-linear-gradient(0deg, #00263b 0%, #9ab3f5 100%)";
-        var1.style.backgroundImage= "-ms-linear-gradient(0deg, #00263b 0%, #9ab3f5 100%)";
-    }
-    
-    function colocarcolorRojo(var1){
-        var1.style.backgroundImage= "-moz-linear-gradient(0deg, #931a25 0%, #ffcb8e 100%)";
-        var1.style.backgroundImage= "-webkit-linear-gradient(0deg, #931a25 0%, #ffcb8e 100%)";
-        var1.style.backgroundImage= "-ms-linear-gradient(0deg, #931a25 0%, #ffcb8e 100%)";
-    }
-    
-}
 
 /*Colorear fin */
 
