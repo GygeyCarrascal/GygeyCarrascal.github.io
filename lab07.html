@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/Logo.png">
+    <meta charset="UTF-8">
+    <title>Ginori Home</title>
+
+    <!--Fuente inicio-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico">
+    <!--Fuente fin-->
+    <!--Iconos inicio-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--Iconos fin-->
+    <!--Framework inicio-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     
+    <!-- Minified JS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    
+    <link rel="stylesheet" href="style/a.css">
+    <link rel="stylesheet" href="style/Lab7.css">
+    </head>
+    <body>
+        <section class="areadelbanner" id="home">	
+            <header>
+                <nav class="backarea">
+                    <input type="checkbox"  id="res-menu">
+                    <label for="res-menu">
+                         <span class="material-icons" id="sing-one"> view_headline </span>
+                         <span class="material-icons" id="sing-two">clear</span>
+                    </label>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#hobbies">Sobre Mi</a></li>
+                        <li><a href="#Contacto">Contacto</a></li>
+                        <li><a href="/lab07.html">Lab 07</a></li>
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" href="#" id="navbardrop">
+                            Carta
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/carta05.html">Carta05</a>
+                          </div>
+                        </li>
+
+                    </ul>                   
+                </nav>
+                <div class="banner-area">
+                    <div class="banner-text">
+                        <h2></h2>
+                    </div>
+                </div>
+            </header>			
+        </section>
+
+        <section class="FormularioLab">
+            <div class="formgrid1">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-sm-2 colorearAzul" id="labapynom">
+                                <p >Apellidos y nombres:</p>
+                                    
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="input-field col s6" style="width: 100%;" >
+                                    <input placeholder="Ingresa tus apellidos y nombres" id="apeynomb" type="text" class="validate" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 colorearAzul" id="labfechnaci">                               
+                                <p >Fecha de nacimiento:</p>
+                               
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="input-field col s6" style="width: 100%;" >
+                                <!--input placeholder="Ingresa tu fecha de nacimiento" id="fechnaci" type="text" class="validate" required-->
+                                <input type="date" class="datepicker" id="fechnaci" class="validate" required>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-sm-2 colorearAzul" id="labapellidopat">
+                                <p >Apellidos Paterno:</p>
+                                    
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="input-field col s6" style="width: 100%;" >
+                                    <input  id="apellidopat" type="text" class="validate">
+                                </div>
+                            </div>
+                            <div class="col-sm-2 colorearRojo"  id="lablongap">                               
+                                <p >Longitud de apellido:</p>
+                               
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="input-field col s6" style="width: 100%;" >
+                                <input  id="longap" type="text" class="validate">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 colorearAzul"  id="labapellidomat">
+                                <p >Apellidos Materno:</p>
+                                    
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="input-field col s6" style="width: 100%;" >
+                                    <input  id="apellidomat" type="text" class="validate">
+                                </div>
+                            </div>
+                            <div class="col-sm-2 colorearRojo" id="labedad">                               
+                                <p >Edad:</p>
+                               
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="input-field col s6" style="width: 100%;" >
+                                <input  id="edad" type="text" class="validate">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 colorearAzul"  id="labnombre">
+                                <p >Nombre:</p>
+                                    
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="input-field col s6" style="width: 100%;" >
+                                    <input  id="nombre" type="text" class="validate">
+                                </div>
+                            </div>
+                            <div class="col-sm-2 colorearRojo" id="labmesletras" >                               
+                                <p >Mes en letras:</p>
+                               
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="input-field col s6" style="width: 100%;" >
+                                <input id="mesletras" type="text" class="validate">
+                            </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+            <div class="row"  >
+                <div class="col-sm-4 " >
+                    <button class="botonnegro" name="action" style="padding-left: auto;padding-right: auto;" onclick="Validar()">Extraer
+                      </button>  
+                    
+                </div>
+                <div class="col-sm-4 ">
+                    <button class="botonnegro" name="action" style="padding-left: auto;padding-right: auto;" onclick="colorear()">Colorear
+                      </button>  
+                </div>
+                <div class="col-sm-4 ">
+                    <button class="botonnegro" name="action" style="padding-left: auto;padding-right: auto;"onclick="limpiar()">Limpiar formulario
+                    </button>  
+                </div>
+                
+              </div>
+        </section>
+       
+        <footer class="sit-footer">
+            <div class="footer-bar">
+                <div class="outer-container">
+                    <div class="container-fluid">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-md-6">
+                                <div class="footer-copyright">
+                                    <p>© 2020 . All rights reserved | Realizado por <span class="glyphicon glyphicon-heart"></span>  GinoriCarrascal <span class="glyphicon glyphicon-heart"></span></p>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-md-6">
+                                <div class="footer-social">
+                                    <ul class="flex justify-content-center justify-content-md-end align-items-center">
+                                        <li><a  href="https://www.linkedin.com/in/gigey-carrascal-5a5051186/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                                        <li><a  href="https://www.facebook.com/Gigeey"><i class="fa fa-facebook" target="_blank"></i></a></li>
+                                        <li><a  href=""><i  class="fa fa-twitter"></i></a></li>                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="./js/lab07.js"> </script>
+        
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+       
+    </body>
+  
+</html>
