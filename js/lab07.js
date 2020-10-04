@@ -28,7 +28,7 @@ document.getElementById("btnextraer").addEventListener('click', function(){
 
 
 
-function Validar(){
+function Validar(var1,var2,var3,var4,var5,var6,var7,var8){
     let labapeynomb=document.getElementById("apeynomb");
     let labfechnaci=document.getElementById("fechnaci");  
 
@@ -65,18 +65,16 @@ return apellidop;
 function SepararApellidoMat(var1){
     let espacio=" ";
    let nuevoap=var1.substring(var1.indexOf(espacio)+1,var1.length);
-   let apellidom=nuevoap.substring(0,nuevoap.indexOf(espacio));   
-   let apellidom=nuevoap.substring(0,nuevoap.indexOf(espacio)); 
+   let apellidom1=nuevoap.substring(0,nuevoap.indexOf(espacio)); 
 
-   return apellidom;
+   return apellidom1;
 }
 
 function SepararNombre(var1){
     let espacio=" ";
    let nuevoap=var1.substring(var1.indexOf(espacio)+1,var1.length);
-   let nombre=nuevoap.substring(nuevoap.indexOf(espacio)+1,nuevoap.length);   
-   let nombre=nuevoap.substring(nuevoap.indexOf(espacio)+1,nuevoap.length);
-    return nombre;
+   let nombre1=nuevoap.substring(nuevoap.indexOf(espacio)+1,nuevoap.length); 
+   return nombre1;
 }
 
 function CalEdad(var1){
@@ -161,7 +159,55 @@ function MesLetr(var1){
 
 /*colorear inicio*/
 let flag=0;
+function colorear(){
+    console.log(flag);
+    let azul=document.getElementById("labapynom");
+    let azul1=document.getElementById("labapellidopat");
+    let azul2=document.getElementById("labapellidomat");
+    let azul3=document.getElementById("labnombre");
+    let azul4=document.getElementById("labfechnaci");
+    let rojo=document.getElementById("lablongap");  
+    let rojo1=document.getElementById("labedad");  
+    let rojo2=document.getElementById("labmesletras");  
 
+    if(flag==0){
+        colocarcolorAzul(rojo);
+        colocarcolorAzul(rojo1);
+        colocarcolorAzul(rojo2);
+        colocarcolorRojo(azul);
+        colocarcolorRojo(azul1);
+        colocarcolorRojo(azul2);
+        colocarcolorRojo(azul3);
+        colocarcolorRojo(azul4);
+        flag=1;
+    }else{
+
+        colocarcolorRojo(rojo);
+        colocarcolorRojo(rojo1);
+        colocarcolorRojo(rojo2);
+        colocarcolorAzul(azul);
+        colocarcolorAzul(azul1);
+        colocarcolorAzul(azul2);
+        colocarcolorAzul(azul3);
+        colocarcolorAzul(azul4);
+
+        flag=0;
+    }
+    console.log(flag);
+
+    function colocarcolorAzul(var1){
+        var1.style.backgroundImage= "-moz-linear-gradient(0deg, #00263b 0%, #9ab3f5 100%)";
+        var1.style.backgroundImage= "-webkit-linear-gradient(0deg, #00263b 0%, #9ab3f5 100%)";
+        var1.style.backgroundImage= "-ms-linear-gradient(0deg, #00263b 0%, #9ab3f5 100%)";
+    }
+
+    function colocarcolorRojo(var1){
+        var1.style.backgroundImage= "-moz-linear-gradient(0deg, #931a25 0%, #ffcb8e 100%)";
+        var1.style.backgroundImage= "-webkit-linear-gradient(0deg, #931a25 0%, #ffcb8e 100%)";
+        var1.style.backgroundImage= "-ms-linear-gradient(0deg, #931a25 0%, #ffcb8e 100%)";
+    }
+
+}
 
 /*Colorear fin */
 
