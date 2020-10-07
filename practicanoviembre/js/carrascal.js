@@ -8,6 +8,9 @@ let panel=document.getElementById("Botonpanel");
 let fecha=document.getElementById("botoncultura");
 
 
+let fotoborrar=document.getElementById("imagenaborrar");
+
+
 let p1=document.getElementById("lect");
 let p2=document.getElementById("lect2");
 let p3=document.getElementById("lect3");
@@ -41,15 +44,18 @@ document.getElementById("iconbook3").addEventListener('click', function(){
 
 
 
-document.getElementById("Botonpanel").addEventListener('click', function(){
+document.getElementById("fotoborrar").addEventListener('click', function(){
    
     panel.onclick=Crearpanel()
 });
+
 
 document.getElementById("botoncultura").addEventListener('click', function(){
    
     fecha.onclick=Crearfecha()
 });
+
+
 
 function Cambiar(var1){    
     var texto = "Lectura finalizada"
@@ -57,11 +63,10 @@ function Cambiar(var1){
     console.log("Sdfsd")
 }
 
-function Crearpanel(){
-    var capa = document.getElementById("capa");
-  var h1 = document.createElement("h1");
-  h1.innerHTML = "assd";
-  capa.appendChild(h1);
+
+
+function Crearpanel(){   
+  
 }
 
 
