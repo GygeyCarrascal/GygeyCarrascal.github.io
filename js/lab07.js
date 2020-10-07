@@ -66,7 +66,6 @@ function SepararApellidoMat(var1){
     let espacio=" ";
    let nuevoap=var1.substring(var1.indexOf(espacio)+1,var1.length);
    let apellidom1=nuevoap.substring(0,nuevoap.indexOf(espacio)); 
-
    return apellidom1;
 }
 
