@@ -2,8 +2,8 @@
     font-family: Poppins;
 }
 .pad15{
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 
@@ -64,11 +64,11 @@ text-align: left;
 }
 
 .morado{
-  color: #31112c;
+  color: #794c74;
 }
 
 .fondomorado{
-    background-color: #31112c;
+    background-color: #794c74;
     color: white;
     font-weight: bold;
     font-size: 14px;
@@ -95,22 +95,3 @@ text-align: left;
     background-color: #fbdcc4;
 }
 
-.row1 {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    visibility: hidden;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
